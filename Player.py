@@ -12,16 +12,11 @@ class Player:
         self.cost = cost
 
     def Eval(self):
-        #returns computed evalutation and player id
+        #returns computed evalutation
         eval = 0
 
-        if (self.Role == 1):
-            pass
-        if (self.Role == 2):
-            pass
-        if (self.Role == 3):
-            pass
-        if (self.Role == 4):
-            pass
+        eval =self.totalPoints * self.minutesPlayed * float (self.SelectedPercantage) / self.cost
+
+
 
         return  eval
