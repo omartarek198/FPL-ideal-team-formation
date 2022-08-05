@@ -2,7 +2,7 @@ from fpl import FPL
 import aiohttp
 import asyncio
 from Player import  *
-
+import sys
 
 def GetRolesList(role,players):
 
@@ -47,14 +47,19 @@ async def main():
     topMids = []
     topAtk = []
 
-    print (dir (players[0]))
 
     for player in players:
+        if player.minutes ==0:
+            continue
         temp =  Player(player.code,player.web_name,ln=player.first_name,totalPts= player.total_points,ptsPergame=player.points_per_game,
                        minutes=player.minutes,postion=player.element_type,selectedBy=player.selected_by_percent,cost=player.now_cost/10)
         ListOfPlayers.append(temp)
 
+    if (len (ListOfPlayers) <250):
+        print ("Cant Generate squad as we are in the middle of GW1")
+        await session.close()
 
+        sys.exit()
 
     top_performers = sorted(
         ListOfPlayers, key=lambda x: x.Eval(), reverse=True)
