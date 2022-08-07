@@ -5,6 +5,11 @@
 #### Total minutes played by the player
 #### The percantage of other users who selected the player
 #### The cost of the player 
+### Constraints ( Rules of the squad )
+#### There has to be 15 players in total
+#### Budget for squad is 100 million
+#### Cannot select more than 3 players from the same team in the squad
+
 ### Using the previous data, and using the BackTrack algorithm, the following squad was generated. 
 
 
