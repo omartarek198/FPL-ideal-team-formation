@@ -13,8 +13,10 @@
 ### Using the previous data, and using the BackTrack algorithm, the following squad was generated. 
 
 
-<img width="626" alt="temp" src="https://user-images.githubusercontent.com/87566788/183143584-b773b6f2-8d03-4ce0-8a62-de2fa8bdfe1e.png">
+<img width="596" alt="fpl" src="https://user-images.githubusercontent.com/87566788/187094366-719c224c-c73e-4ca4-b568-bfe5ea7ef118.png">
 
-#### Really excited to see how well this squad preformes in comparison to other squads created by other users.
+
+### The algorithm chose this squad with no human factor involved and ended up scoring 7 points higher than average and ranking 3.4 million out of 9+ million players
+
 
 ## Important note : the api for FPL resets it's player data every new season and this squad was selected based on the data from season 2021/2022, as a result, same code might generate different squad later
